@@ -1,0 +1,30 @@
+.error {
+    border: 3px solid red;
+}
+
+.errorMsg{
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-top: 4px;
+}
+
+.textfield input{
+    width: 99%;
+}
+
+#submit{
+    background-color: blue;
+    color:aliceblue;
+    padding: 5px;
+    border: none;
+    border-radius: 15%;
+}
+
+#reset{
+    background-color:red;
+    color:aliceblue;
+    padding: 5px;
+    border: none;
+    border-radius:15%;
+}
