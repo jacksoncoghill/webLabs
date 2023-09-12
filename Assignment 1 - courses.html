@@ -1,0 +1,106 @@
+    <!--Author: Jackson Coghill #041089141
+     File: courses.html
+     Date: June 17, 2023
+     Purpose: Information about curriculum & courses, filtered and sortable through JavaScript 
+    -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Course Portfolio for Jackson Coghill">
+        <meta name="keywords" content="Ottawa, Student, Jackson, Coghill, Resume, Algonquin, College">
+        <meta name="author" content="Jackson Coghill">
+        <title>Jackson Coghill - Student Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="ass1.css">
+        <script src="ass1.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 id="topIndex"> Jackson Coghill - Student Portfolio</h1>
+            <nav class="mainNav">
+                <a href="index.html">Homepage</a>
+                <a href="resume.html">Resume</a>
+                <a href="courses.html">Courses</a>
+            </nav>
+        </header>
+        <main>
+            <h1>Computer Programming Curriculum</h1>
+            <input type="text" id="searchBar" onkeyup="myFunction()" placeholder="Search courses..." title="Course Search">
+            <button class="courseButton" onclick="sortListAscend()">Sort (Ascending)</button>
+            <button class="courseButton" onclick="sortListDescend()">Sort (Descending)</button>
+            <select class="courseSelect" id="filterSelect" onchange="handleFilterSelection()">
+                <option value="all">All</option>
+                <option value="l1">Level 01</option>
+                <option value="l2">Level 02</option>
+              </select>
+            <ul id="courses">
+                <li class="filterDiv l1">
+                    <img src="./images/java1.jpg" alt="Green Matrix">
+                    <p class="title">Level 01 - CST8116 - Introduction to Computer Programming</p>
+                    <p class="desc">Introduction to the fundamentals of logic, problem solving, and programming language structure.</p>
+                </li>
+                <li class="filterDiv l1">
+                    <img src="./images/comp-ess.png" alt="File Folders">
+                    <p class="title">Level 01 - CST8118 - Computer Essentials</p>
+                    <p class="desc">Survey of computer maintenance, operating systems and software, security, and environmental impacts of technology.</p>
+                </li>
+                <li class="filterDiv l1">
+                    <img src="./images/database1.png" alt="Database Nodes">
+                    <p class="title">Level 01 - CST8215 - Introduction to Database</p>
+                    <p class="desc">Fundamentals of relational database using Entity Relation Diagrams and Structured Query Language to create, modify, and query databases.</p>
+                </li>
+                <li class="filterDiv l1">
+                    <img src="./images/success.png" alt="Blue Resume">
+                    <p class="title">Level 01 - CST8300 - Achieving Success in Changing Environments</p>
+                    <p class="desc">Exploration of future possibilities, self-assessment of aptitudes and strengths, and application of critical thinking to address societal issues.</p>
+                </li>
+                <li class="filterDiv l1">
+                    <img src="./images/comm1.png" alt="Linked People">
+                    <p class="title">Level 01 - ENL1813T - Communications I</p>
+                    <p class="desc">Practice of writing, speaking, reading, listening, locating and documenting information to strengthen professional communication.</p>
+                </li>
+                <li class="filterDiv l1">
+                    <img src="./images/math.jpg" alt="Algebraic Expressions">
+                    <p class="title">Level 01 - MAT8001C - Technical Mathematics for Computer Science</p>
+                    <p class="desc">Study of algebraic and trancendental functions, computer number systems, Boolean algebra and vector components.</p>
+                </li>
+                <li class="filterDiv l2">
+                    <img src="./images/database1.png" alt="Database Nodes 2">
+                    <p class="title">Level 02 - CST2355 - Database Systems</p>
+                    <p class="desc">Experience object-relational database management systems (Oracle and MySQL) using concepts such as case structure, rollup and cube operations.</p>
+                </li>
+                <li class="filterDiv l2">
+                    <img src="./images/linux.png" alt="Linux Penguin">
+                    <p class="title">Level 02 - CST8102 - Operating System Fundamentals (GNU/Linux)</p>
+                    <p class="desc">Examination of operating systems structure, process management, storage, installation, configuration, and administration based on GNU/Linux.</p>
+                </li>
+                <li class="filterDiv l2">
+                    <img src="./images/java2.jpg" alt="Blue Matrix">
+                    <p class="title">Level 02 - CST8284 - Object Oriented Programming (Java)</p>
+                    <p class="desc">Understanding of object-oriented concepts such as encapsulation, inheritance, abstraction, and polymorphism with practical applications.</p>
+                </li>
+                <li class="filterDiv l2">
+                    <img src="./images/webdev.png" alt="World Wide Web Globes">
+                    <p class="title">Level 02 - CST8285 - Web Programming</p>
+                    <p class="desc">Development of basic skills of web programming, design, and implementation through JavaScript, HTML5, PHP, and CSS.</p>
+                </li>
+                <li class="filterDiv l2">
+                    <img src="./images/comm2.jpg" alt="Presentation Reports">
+                    <p class="title">Level 02 - ENL2019T - Technical Communication for Engineering Technologies</p>
+                    <p class="desc">Fostering independent and collaborative thinking, research, writing, visual communication, and presentation skills.</p>
+                </li>
+                <li class="filterDiv l2">
+                    <img src="./images/coop.png" alt="Tan Resume">
+                    <p class="title">Level 02 - GEP1001 - Cooperative Education and Job Readiness</p>
+                    <p class="desc">Preparation for conducting a professional job search and success in the workplace through workshop-style sessions.</p>
+                </li>
+            </ul>
+            <footer>
+                <nav class="bottomNav">
+                   <a href="#topIndex">To the top!</a>
+                </nav>
+                <p class="author">Formatting and code by Jackson Coghill © 2023 </p>
+            </footer>
+            
+        </main>
+    </body>

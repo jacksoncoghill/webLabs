@@ -1,0 +1,257 @@
+/* Author: Jackson Coghill #041089141
+File: courses.html
+Date: June 11, 2023
+Purpose: CSS File for formatting of resume.html, courses.html, and index.html
+*/
+
+body {
+    background: #a9d7d4;
+    color: rgb(8, 7, 18);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+header {
+    background: #409a75;
+    color: rgb(159, 225, 224);
+    border: 4px solid rgb(8, 7, 18);
+    border-radius: 21px;
+    padding: 10px;
+    justify-content: center;
+}
+/*h1 is header on all pages
+*/
+h1 {
+    font-size: 42px;
+    display: flex;
+    justify-content: center;
+}
+
+/*mainNav is present on all three pages
+*/
+.mainNav {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.mainNav a {
+    color: initial;
+    margin: 0 20px;
+    text-decoration: none;
+    padding: 10px 12px;
+    background-color: rgb(159, 225, 224);
+    border-style: inset;
+    border-radius: 8px;
+}
+
+.mainNav a:hover {
+    color:#8B635C;
+}
+
+/*Flex set to 1 to take up remaining vertical space within container, pushing footer to the bottom of the page
+*/
+main{
+    flex: 1;
+}
+
+.general {
+    font-size: 200%;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  /*Emboldening words in biography
+  */
+  .bold {
+    font-weight: bold;
+  }
+
+.general a {
+    text-decoration: none;
+}
+
+.general a:link{
+    color:#409a75
+}
+
+.general a:visited{
+    color: rgb(207, 113, 176)
+    
+}
+
+.general a:hover{
+    color: #9400D3
+}
+
+/*Formatting for images on the index page. portrait and hamburger
+*/
+.portrait {
+    width: 25%;
+    height: auto;
+    border-radius: 10%;
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .hamburger{
+    width: 25%;
+    height: auto;
+    border-radius: 10%;
+    float: left;
+    margin: 10px;
+  }
+
+  /*Formatting used for footer same across all three pages
+  */
+footer{
+    margin-top: 20px;
+    background: #409a75;
+    color: rgb(159, 225, 224);
+    border: 4px solid rgb(8, 7, 18);
+    border-radius: 21px;
+    padding: 10px;
+}  
+
+.bottomNav a {
+    color: rgb(207, 113, 176)
+}
+
+.bottomNav a:hover {
+    color: #9400D3
+}
+
+/*This is the formatting for the searchbar on the courses page, that with javascript will allow users to search through all courses
+*/
+#searchBar {
+    background-image: url('./images/search.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    background-size: 20px;
+    width: 94%;
+    font-size: 16px; 
+    padding: 12px 20px 12px 40px; 
+    border: 1px solid #ddd; 
+    margin-bottom: 12px; 
+  }
+
+ /*Courses formatting, for the appearance of a table without using table tags
+ */ 
+  #courses {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #courses li {
+    border: 1px solid #ddd; 
+    margin-top: -1px; 
+    background-color: #f6f6f6; 
+  
+    padding: 12px; 
+    text-decoration: none; 
+    font-size: 18px; 
+    color: black; 
+    display: block; 
+  }
+
+    #courses li img {
+        margin-right: 10px;
+        float: left;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    p.title{
+        text-decoration-line: underline;
+        font-weight: bold;
+    }
+
+/*Buttons for sorting and filtering the courses
+*/
+    .courseButton{
+        color: initial;
+        margin: 0 20px 20px 0;
+        text-decoration: none;
+        padding: 8px 10px;
+        background-color: rgb(210, 150, 190);
+        border-style: inset;
+        border-radius: 8px;
+    }
+
+  
+    .courseSelect{
+        color: initial;
+        margin: 0 20px 20px 0;
+        padding: 8px 10px;
+        background-color: rgb(210, 150, 190);
+        border-style: inset;
+        border-radius: 8px;
+    }
+
+/*Resume formatting starts here
+*/
+    .hResume{
+        font-size: 32px;
+        display: flex;
+        justify-content: left;
+        position: relative;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    /*Linear gradient for something a little different
+    */
+    .hResume::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -5px;
+        height: 5px;
+        background: linear-gradient(to right, #409a75, rgb(210, 150, 190));
+    }
+
+    .subHead{
+        text-decoration: underline;
+    }
+
+    .subHead a:link{
+        color:#409a75;
+    }
+    
+    .subHead a:visited{
+        color: rgb(207, 113, 176);
+    }
+    
+    .subHead a:hover{
+        color: #9400D3;
+    }
+
+    /* Formatting of thumbnails on links to previous labs
+    */
+    .thumb{
+        margin-right: 10px;
+        float: left;
+        width: 50px;
+        height: 50px;
+        border-radius: 20%;
+    }
+
+    .labLink:link{
+        color:#409a75
+    }
+    .labLink:visited{
+        color: rgb(207, 113, 176)
+    }
+    .labLink:hover{
+        color: #9400D3;
+    }
